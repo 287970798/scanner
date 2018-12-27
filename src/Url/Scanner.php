@@ -36,14 +36,15 @@ class Scanner
             } catch (\Exception $e) {
                 $statusCode = 500;
             }
+
+            if ($statusCode >= 400) {
+                array_push($invalidUrls, [
+                        'url' => $url,
+                        'status' => $statusCode
+                ]);
+            }
         }
 
-        if ($statusCode >= 400) {
-            array_push($invalidUrls, [
-                    'url' => $url,
-                    'status' => $statusCode
-            ])
-        }
         return $invalidUrls;
     }
 
