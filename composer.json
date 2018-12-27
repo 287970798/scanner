@@ -1,0 +1,32 @@
+{
+    "name": "287970798/scanner",
+    "description": "Scan URLs from a CSV file and report inaccessible URLs",
+    "keywords": ["url", "scanner", "csv"],
+    "homepage": "http://example.com",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ren xinwei",
+            "homepage": "https://github.com/287970798",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "email": "287970798@qq.com"
+    },
+    "require": {
+        "php": ">=5.4.0",
+        "guzzlehttp/guzzle": "~5.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.3"
+    },
+    "suggest": {
+        "league/csv": "~6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Siven\\": "src/"
+        }
+    }
+}
